@@ -57,10 +57,6 @@ async function connectToDatabase() {
   connectToDatabase();
   
   
-  
-  
-  
-  
 
 app.use(express.static('client/dist'));
 app.get("*", function (req, res) {
