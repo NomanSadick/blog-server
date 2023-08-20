@@ -43,14 +43,14 @@ app.use(limiter)
 
 
 async function connectToDatabase() {
-    const URI = "mongodb+srv://<username>:<password>@cluster0.rbbqn.mongodb.net/CRUD?retryWrites=true&w=majority";
-    const OPTIONS = { user: 'testuser111', pass: 'testuser111', autoIndex: true };
+    const URI = "mongodb+srv://testuser111:testuser111@cluster0.rbbqn.mongodb.net/CRUD?retryWrites=true&w=majority";
+    // const OPTIONS = { user: 'testuser111', pass: 'testuser111', autoIndex: true };
   
     try {
-      await mongoose.connect(URI, OPTIONS);
-      console.log("Connection Success");
+      await mongoose.connect(URI);
+      console.log("Connection Success"); 
     } catch (error) {
-      console.error("Connection Error:", error);
+      console.error("Connection Error:", error); 
     }
   }
   
