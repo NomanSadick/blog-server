@@ -58,10 +58,10 @@ async function connectToDatabase() {
   
   
 
-app.use(express.static('client/dist'));
-app.get("*", function (req, res) {
-    res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html')); // Use res.sendFile instead of req.sendFile
-});
+// app.use(express.static('client/dist'));
+// app.get("*", function (req, res) {
+//     res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html')); // Use res.sendFile instead of req.sendFile
+// });
 
 
 // Routing Implement
